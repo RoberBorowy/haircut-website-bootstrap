@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/95eba3663f.js" crossorigin="anonymous"></script>
+    <title>Welcome on my site </title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3" id="navbar">
+        <div class="container">
+            <div class="navbar-brand" href="#">
+                <sapn class="brand-text-first">Master</sapn><span class="brand-text-second">Hair</span>
+            </div>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse  navbar-collapse justify-content-end" id="navbarNav">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#about">O nas</a>
+                <a class="nav-link " href="#services">Usługi</a>
+                <a class="nav-link" href="#team">Nasz Team</a>
+                <a class="nav-link" href="#contact">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-image">
+        <div class="hero-img"></div>
+        <div class="hero-content">
+            <h1 class="hero-text">Twój Najlepszy fry<span class="fluo">zjer</span> w mieście</h1>
+            <button class="btn btn-dark">Umów wizytę</button>
+        </div>
+
+    </div>
+
+    <section class="container about d-flex justify-content-around align-items-center" id="about">
+        <div class="about-img mb-lg-4">
+            <img src="./assets/img/boss.jpg" alt="team" srcset="">
+        </div>
+        <div class="about-text">
+               <div class="about-underline d-flex flex-column align-items-center">
+                   <h2 class="title ">O nas</h2>
+                   <span class="underline mb-4"></span>
+               </div>
+            <span class="about-description">Po latach pracy w zawodzie postanowili swoją wiedzę, doświadczenie i pasję
+                przekazać dalej, aby każdy Klient mógł cieszyć się pięknymi włosami. Dlatego stworzyli pierwszy salon
+                MasterHair w 2005 roku, do którego zaprosili doświadczonych Stylistów. Dzięki programowi od asystenta
+                do fryzjera pasjonaci fryzjerstwa mogli pod ich okiem szkolić się i tworzyć wspaniałe stylizacje dla
+                Klientów.</span>
+
+        </div>
+    </section>
+
+    <section class="container services d-flex flex-column justify-content-evenly align-items-center" id="services">
+        <div class="about-underline  d-flex flex-column align-items-center">
+            <h2 class="title ">Usługi</h2>
+            <span class="underline mb-4"></span>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/austin-pacheco-FtL07GM9Q7Y-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Strzyżenie dzieci</h5>
+                        <p class="card-text">Potrafimy wyczarować prawdziwe cuda na głowie Twojego dziecka przyjdź i się przekonaj</p>
+                    </div>
+                    <button class="btn btn-dark">Umów sie na wizyte</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/adam-winger-HEde-a_T4E8-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Strzyżenie damskie</h5>
+                        <p class="card-text">Prawdziwa pasja to stylizowanie Was drogie Panie, zapiszcie się juz dziś, a wyjdziecie odmienione !!</p>
+                    </div>
+                    <button class="btn btn-dark">Umów sie na wizyte</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/kenny-eliason-tVv667jkTUc-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Strzyżenie męskie </h5>
+                        <p class="card-text">Fryzurę dobierzemy tak abyś nie wstydził się wyjśc  kolegami na piwo :)</p>
+                    </div>
+                    <button class="btn btn-dark">Umów sie na wizyte</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="./app.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;500;600&display=swap');
+@import './media';
+@import'./colors';
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+body {
+    position: relative;
+    background-color:$background-color;
+}
+
+// ui class
+.underline {
+    display: inline-block;
+    width: 3rem;
+    height: 1px;
+    align-items: center;
+    background-color: $fluo-color;
+}
+
+// nav
+i,
+a,
+​a:visited,
+a:link,
+.nav-link {
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar.shadow {
+    background-color: rgba(0, 0, 0, .9);
+
+}
+
+.navbar {
+    background: transparent;
+    transition: background-color .6s;
+    z-index: 1;
+
+    .navbar-brand {
+        color: white
+    }
+
+    .brand-text-second {
+        color: $fluo-color;
+        font-family: fantasy;
+    }
+
+    .navbar-toggler {
+        padding: .5rem;
+    }
+
+    .nav-link:hover {
+        color: $fluo-color;
+    }
+
+    .active {
+        color: $fluo-color;
+    }
+
+}
+
+// hero
+.hero-image {
+    height: 100vh;
+    position: relative;
+
+    .hero-img {
+        width: 100%;
+        height: 100%;
+        background: url(/hairdresser/assets/img/hero-image.jpg)no-repeat center center;
+        position: relative;
+        background-attachment: fixed;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, .8);
+        }
+
+    }
+
+    .hero-content {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .hero-text {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: white;
+            text-transform: uppercase;
+            line-height: 5rem;
+            text-align: center;
+
+            .fluo {
+                color: $fluo-color;
+            }
+
+        }
+
+        .btn {
+            transition: .3s;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: 1px solid black;
+        }
+
+        .btn:hover {
+            color: $fluo-color;
+        }
+    }
+}
+
+// about
+.about {
+    min-height: 100vh;
+    color: $grey-color;
+
+    .about-img img {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 2px 0px 32px 9px rgba(66, 68, 90, 1);
+        -moz-box-shadow: inset 2px 0px 32px 9px rgba(66, 68, 90, 1);
+        box-shadow: inset 2px 0px 32px 9px rgba(66, 68, 90, 1);
+    }
+
+    .about-text {
+        width: 40%;
+
+        .about-description {
+            text-align: justify;
+            line-height: 1.8rem;
+        }
+    }
+}
+
+// services 
+.services {
+    min-height: 100vh;
+    .card {
+        -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    }
+}
