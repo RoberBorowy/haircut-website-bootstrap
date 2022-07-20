@@ -1,3 +1,16 @@
 $grey-color :#444;
 $fluo-color:#8CF00A;
 $background-color:rgb(191, 188, 188);
+
+@mixin shadowIn {
+   border-radius: 5px;
+   -webkit-box-shadow: inset 2px 0px 32px 9px rgba(66, 68, 90, 1);
+   -moz-box-shadow: inset 2px 0px 32px 9px rgba(66, 68, 90, 1);
+   box-shadow: inset 2px 0px 32px 9px rgba(66, 68, 90, 1);
+}
+
+@mixin boxShadow{
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}

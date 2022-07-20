@@ -11505,6 +11505,17 @@ textarea.form-control-lg {
 .about .about-text .about-subtitle {
     text-align: center;
   }
+  .team-img {
+    width: 100%;
+    height: 100%;
+  }
+  .team-img img {
+    width: 80%;
+    height: 80%;
+  }
+  .team-img .name {
+    font-size: 1rem;
+  }
 }
 *,
 *::before,
@@ -11528,6 +11539,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #8CF00A;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.fluo {
+  color: #8CF00A;
 }
 
 i,
@@ -11615,9 +11634,6 @@ a:link,
   line-height: 5rem;
   text-align: center;
 }
-.hero-image .hero-content .hero-text .fluo {
-  color: #8CF00A;
-}
 .hero-image .hero-content .btn {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -11652,4 +11668,37 @@ a:link,
 .services .card {
   -webkit-box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
   box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
+}
+
+.team {
+  min-height: 100vh;
+}
+.team .team-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
+  box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
+  margin-bottom: 1.5rem;
+}
+.team .team-img img {
+  width: 80%;
+  height: 80%;
+  margin: 1.5rem;
+  border-radius: 5px;
+}
+.team .team-img .name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

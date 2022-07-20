@@ -24,7 +24,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.hero-text, .btn-dark,.about-img,.about-text,.title,.underline,.about-subtitle,.about-description,.card`,
+  `.hero-text, .btn-dark,.about-img,.about-text,.title,.underline,.about-subtitle,.about-description,.card,.team-img`,
   {
     interval: 100,
   }
