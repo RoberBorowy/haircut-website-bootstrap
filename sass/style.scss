@@ -90,7 +90,7 @@ a:link,
     .hero-img {
         width: 100%;
         height: 100%;
-        background: url(/hairdresser/assets/img/hero-image.jpg)no-repeat center center;
+        background: url(/hairdresser/assets/img/hero-image.jpg)center center;
         position: relative;
         background-attachment: fixed;
 
@@ -166,6 +166,19 @@ a:link,
 
     .card {
         @include boxShadow;
+
+        .btn {
+            background-color: $fluo-color;
+            text-transform: uppercase;
+            color: #fff;
+
+            &:hover {
+                background-color: #27ae60;
+                color: #fff;
+                transition: .3s;
+            }
+        }
+
     }
 }
 
@@ -173,25 +186,114 @@ a:link,
 .team {
     min-height: 100vh;
 
-    .team-img {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        @include boxShadow;
-        margin-bottom: 1.5rem;
+    img {
+        width: 80%;
+        height: 80%;
+        margin: 1.5rem;
+        border-radius: 5px;
+        transition: .3s;
 
-        img {
-            width: 80%;
-            height: 80%;
-            margin: 1.5rem;
-            border-radius: 5px;
-        }
-        .name {
-            font-size: 2rem;
-            text-transform: uppercase;
-            letter-spacing: .5rem;
+
+        &:hover {
+            transform: scale(1.2)
         }
     }
 
+    .social {
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: center;
+        font-size: 2rem;
+
+        i {
+            margin: 0 1rem 0 1rem;
+            cursor: pointer;
+        }
+
+    }
+
+    .name {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+    }
+}
+
+// contact
+.contact {
+    min-height: 100vh;
+
+    .contact-form {
+        height: 500px;
+        width: 500px;
+        border: 1px solid white;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        flex-wrap: wrap;
+
+        input {
+            width: 290px;
+            height: 40px;
+            padding-left: 10px;
+            outline: none;
+            border: 1px solid black;
+            font-size: 15px;
+            margin-bottom: 10px;
+            background: none;
+
+            &::placeholder {
+                color: rgb(162, 159, 159);
+
+            }
+
+        }
+
+        textarea {
+            background: none;
+            border: 1px solid black;
+            color: black;
+            font-weight: 200;
+            font-size: 15px;
+            padding: 10px;
+            outline: none;
+            min-width: 290px;
+            max-width: 290px;
+            min-height: 80px;
+            max-height: 80px;
+
+            &::-webkit-scrollbar {
+                width: 1em;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(194, 194, 194, 0.713);
+            }
+        }
+
+        .btn {
+            background-color: $fluo-color;
+            text-transform: uppercase;
+            color: #fff;
+
+            &:hover {
+                background-color: #27ae60;
+                color: #fff;
+                transition: .3s;
+            }
+        }
+
+
+
+    }
+
+
+}
+
+footer {
+    text-align: center;
+    min-width: 100%;
+    height: 20px;
+    background-color:rgb(188, 185, 185);
+    color: #fff;
 }

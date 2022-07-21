@@ -11505,16 +11505,42 @@ textarea.form-control-lg {
 .about .about-text .about-subtitle {
     text-align: center;
   }
+  .team-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .team-img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
   }
   .team-img img {
     width: 80%;
-    height: 80%;
   }
   .team-img .name {
     font-size: 1rem;
+  }
+  .contact-form {
+    max-width: 300px;
+    height: 500px;
+  }
+  .contact-form input {
+    width: 250px;
+  }
+  .contact-form textarea {
+    width: 250px;
+  }
+  .contact-form .btn {
+    width: 250px;
   }
 }
 *,
@@ -11528,7 +11554,7 @@ textarea.form-control-lg {
 
 body {
   position: relative;
-  background-color: rgb(191, 188, 188);
+  background-color: rgba(255, 254, 254, 0.9);
 }
 
 .underline {
@@ -11592,7 +11618,7 @@ a:link,
 .hero-image .hero-img {
   width: 100%;
   height: 100%;
-  background: url(/hairdresser/assets/img/hero-image.jpg) no-repeat center center;
+  background: url(/hairdresser/assets/img/hero-image.jpg) center center;
   position: relative;
   background-attachment: fixed;
 }
@@ -11669,36 +11695,126 @@ a:link,
   -webkit-box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
   box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
 }
+.services .card .btn {
+  background-color: #8CF00A;
+  text-transform: uppercase;
+  color: #fff;
+}
+.services .card .btn:hover {
+  background-color: #27ae60;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 
 .team {
   min-height: 100vh;
 }
-.team .team-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
-  box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
-  margin-bottom: 1.5rem;
-}
-.team .team-img img {
+.team img {
   width: 80%;
   height: 80%;
   margin: 1.5rem;
   border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.team .team-img .name {
+.team img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.team .social {
+  width: 100%;
+  margin-top: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+}
+.team .social i {
+  margin: 0 1rem 0 1rem;
+  cursor: pointer;
+}
+.team .name {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+}
+
+.contact {
+  min-height: 100vh;
+}
+.contact .contact-form {
+  height: 500px;
+  width: 500px;
+  border: 1px solid white;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contact .contact-form input {
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid black;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background: none;
+}
+.contact .contact-form input::-webkit-input-placeholder {
+  color: rgb(162, 159, 159);
+}
+.contact .contact-form input::-moz-placeholder {
+  color: rgb(162, 159, 159);
+}
+.contact .contact-form input:-ms-input-placeholder {
+  color: rgb(162, 159, 159);
+}
+.contact .contact-form input::-ms-input-placeholder {
+  color: rgb(162, 159, 159);
+}
+.contact .contact-form input::placeholder {
+  color: rgb(162, 159, 159);
+}
+.contact .contact-form textarea {
+  background: none;
+  border: 1px solid black;
+  color: black;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 290px;
+  max-width: 290px;
+  min-height: 80px;
+  max-height: 80px;
+}
+.contact .contact-form textarea::-webkit-scrollbar {
+  width: 1em;
+}
+.contact .contact-form textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(194, 194, 194, 0.713);
+}
+.contact .contact-form .btn {
+  background-color: #8CF00A;
+  text-transform: uppercase;
+  color: #fff;
+}
+.contact .contact-form .btn:hover {
+  background-color: #27ae60;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer {
+  text-align: center;
+  min-width: 100%;
+  height: 20px;
+  background-color: rgb(188, 185, 185);
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
